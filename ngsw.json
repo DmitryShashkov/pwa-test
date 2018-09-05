@@ -1,0 +1,47 @@
+{
+  "configVersion": 1,
+  "index": "/pwa-test/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/pwa-test/favicon.ico",
+        "/pwa-test/index.html",
+        "/pwa-test/inline.28ae9f29373c24a56ad2.bundle.js",
+        "/pwa-test/main.77cbf718aa2e1f1a98b6.bundle.js",
+        "/pwa-test/polyfills.ad37cd45a71cb38eee76.bundle.js",
+        "/pwa-test/styles.86112b064e5a404ae09b.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/pwa-test/assets/icon-128x128.png",
+        "/pwa-test/assets/icon-152x152.png",
+        "/pwa-test/assets/icon-256x256.png",
+        "/pwa-test/assets/icon-512x512.png"
+      ],
+      "patterns": [
+        "https:\\/\\/cataas\\.com\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/pwa-test/inline.28ae9f29373c24a56ad2.bundle.js": "a782ba669767d5c734226175bdcf1784333adfb2",
+    "/pwa-test/assets/icon-128x128.png": "f444fd3ae0dbc3be5741ef77cf9d0aa21bcdd9d5",
+    "/pwa-test/main.77cbf718aa2e1f1a98b6.bundle.js": "15ce140560efb3a72440ff4c71c0c10220f95ba0",
+    "/pwa-test/assets/icon-152x152.png": "c439eef9906d5a1758700fbbc8ea38d7295eb1bb",
+    "/pwa-test/polyfills.ad37cd45a71cb38eee76.bundle.js": "f7eca8eeec782793d946a11338044f7426ab3494",
+    "/pwa-test/assets/icon-256x256.png": "aa794bf00591bd06c9fee00126b321baa155ee8d",
+    "/pwa-test/styles.86112b064e5a404ae09b.bundle.css": "7464a41958778cb56c1e2bf7dd9c5d110525d45f",
+    "/pwa-test/assets/icon-512x512.png": "ad9b5746e8a586f161f92b21f97c4cd81b157965",
+    "/pwa-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/pwa-test/index.html": "0d256828a9c7ee76a3a32744a36603eca436fd64"
+  }
+}
