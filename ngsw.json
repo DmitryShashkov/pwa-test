@@ -9,8 +9,8 @@
       "urls": [
         "/pwa-test/favicon.ico",
         "/pwa-test/index.html",
-        "/pwa-test/inline.28ae9f29373c24a56ad2.bundle.js",
-        "/pwa-test/main.77cbf718aa2e1f1a98b6.bundle.js",
+        "/pwa-test/inline.e41eee14300204e2b44a.bundle.js",
+        "/pwa-test/main.8b22911f463306dd0937.bundle.js",
         "/pwa-test/polyfills.ad37cd45a71cb38eee76.bundle.js",
         "/pwa-test/styles.86112b064e5a404ae09b.bundle.css"
       ],
@@ -33,15 +33,15 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/pwa-test/inline.28ae9f29373c24a56ad2.bundle.js": "a782ba669767d5c734226175bdcf1784333adfb2",
+    "/pwa-test/inline.e41eee14300204e2b44a.bundle.js": "52ed55d883027abd59a3fb7e2a1ce75e3b2c5dbe",
     "/pwa-test/assets/icon-128x128.png": "f444fd3ae0dbc3be5741ef77cf9d0aa21bcdd9d5",
-    "/pwa-test/main.77cbf718aa2e1f1a98b6.bundle.js": "15ce140560efb3a72440ff4c71c0c10220f95ba0",
+    "/pwa-test/main.8b22911f463306dd0937.bundle.js": "1819f5294421576cf744d86fa7c971f8d60f7e12",
     "/pwa-test/assets/icon-152x152.png": "c439eef9906d5a1758700fbbc8ea38d7295eb1bb",
     "/pwa-test/polyfills.ad37cd45a71cb38eee76.bundle.js": "f7eca8eeec782793d946a11338044f7426ab3494",
     "/pwa-test/assets/icon-256x256.png": "aa794bf00591bd06c9fee00126b321baa155ee8d",
     "/pwa-test/styles.86112b064e5a404ae09b.bundle.css": "7464a41958778cb56c1e2bf7dd9c5d110525d45f",
     "/pwa-test/assets/icon-512x512.png": "ad9b5746e8a586f161f92b21f97c4cd81b157965",
     "/pwa-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/pwa-test/index.html": "0d256828a9c7ee76a3a32744a36603eca436fd64"
+    "/pwa-test/index.html": "34226a4abca198b77147bc58f11c52daa9281ad8"
   }
 }
