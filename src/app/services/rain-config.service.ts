@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
 import { RainConfig } from '../interfaces/rain-config';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router/src/router_state';
-import { Observable } from 'rxjs/internal/Observable';
-import { of } from 'rxjs/internal/observable/of';
 import { Position } from '../classes/position';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
 
 @Injectable()
 export class RainConfigService implements Resolve<RainConfig> {

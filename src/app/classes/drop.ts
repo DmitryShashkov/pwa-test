@@ -29,6 +29,9 @@ export class Drop {
     }
 
     public updatePosition (dto: UpdateDropPositionDto) : void {
+        const X: number = this.currentPosition.X;
+        const Y: number = this.currentPosition.Y - 5;
+        this.currentPosition = new Position(X, Y);
         // const timeDelta: number = dto.currentTime - this.creationTime;
         //
         // const X: number = this.initialPosition.X + (dto.forceOfWind * timeDelta);
@@ -38,6 +41,7 @@ export class Drop {
     }
 
     public render (context: CanvasRenderingContext2D) : void {
-        // context.fillRect(this.currentL - 5, 600 - this.currentH - 5, 10, 10);
+        const coords: Position = this.canvasCoordinates;
+        context.fillRect(coords.X - 5, coords.Y - 5, 10, 10);
     }
 }

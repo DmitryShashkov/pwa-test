@@ -2,6 +2,8 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 import { ActivatedRoute } from '@angular/router';
 import { RainConfig } from '../../../interfaces/rain-config';
 import { Rectangle } from '../../../classes/rectangle';
+import {Drop} from "../../../classes/drop";
+import {Position} from "../../../classes/position";
 
 @Component({
     selector: 'rain',
@@ -23,11 +25,49 @@ export class RainComponent implements OnInit, AfterViewInit {
     }
 
     public ngAfterViewInit () : void {
+        // debugger;
+        const canvasElement: HTMLCanvasElement = this.canvasRef.nativeElement;
+        const context: CanvasRenderingContext2D = canvasElement.getContext('2d');
+
         const cloud: Rectangle = new Rectangle(
             this.config.cloudCoordinates.topLeft,
             this.config.cloudCoordinates.bottomRight,
         );
 
-        console.log(cloud.randomFromInside);
+        const drops: Drop[] = [];
+
+        // this.tick(cloud, drops, context);
+    }
+
+    private tick (
+        cloud: Rectangle,
+        drops: Drop[],
+        context: CanvasRenderingContext2D,
+    ) {
+        if (drops.length < 1000) {
+            drops.push(new Drop({
+                rainConfig: this.config,
+                initialPosition: cloud.randomFromInside,
+                creationTime: 1,
+            }));
+        }
+
+        context.fillStyle = '#fff';
+        context.fillRect(0, 0, this.config.canvasWidth, this.config.canvasHeight);
+        context.fillStyle = '#000';
+
+        for (const drop of drops) {
+            drop.updatePosition({
+                forceOfWind: 1,
+                currentTime: 1,
+            });
+
+            drop.render(context);
+        }
+
+        // console.log(drops);
+        requestAnimationFrame(() => {
+            this.tick(cloud, drops, context);
+        });
     }
 }
